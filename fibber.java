@@ -1,6 +1,14 @@
 public class fibber {
 
-    // Recursive method to find the nth term of the Fibonacci sequence
+    /**
+     * Calculates the nth term in the Fibonacci sequence recursively.
+     * The Fibonacci sequence is characterized by the fact that every number
+     * after the first two is the sum of the two preceding ones.
+     *
+     * @param n The position in the Fibonacci sequence.
+     *          The first position in the sequence is 0.
+     * @return The nth term of the Fibonacci sequence.
+     */
     public static int fibonacci(int n) {
         if (n <= 1) {
             return n;
@@ -9,7 +17,10 @@ public class fibber {
         }
     }
 
-    // Main method to test the fibonacci method
+    /**
+     * Main method to execute the program.
+     * This method calls the fibonacci method with n = 10 and prints the result.
+     */
     public static void main(String[] args) {
         int n = 10;
         int nthFibonacci = fibonacci(n);
